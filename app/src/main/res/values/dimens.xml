@@ -2,4 +2,5 @@
 <resources>
     <dimen name="margin">10dp</dimen>
     <dimen name="town_header_height">400dp</dimen>
+    <dimen name="bottom_sheet_line_height">10dp</dimen>
 </resources>
