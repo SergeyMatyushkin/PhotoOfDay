@@ -14,6 +14,8 @@ import com.bumptech.glide.Glide
 import com.example.photoofday.PictureViewModel
 import com.example.photoofday.databinding.FragmentPictureOfTheDayBinding
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import android.widget.Toast
+import com.google.android.material.chip.Chip
 
 class PictureOfTheDayFragment : Fragment() {
     private var _binding: FragmentPictureOfTheDayBinding? = null
