@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <color name="purple_100">#89FD8E</color>
     <color name="purple_200">#00B31E</color>
     <color name="purple_300">#0F804F</color>
@@ -11,7 +10,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
     <color name="indigo_200">#9fa8da</color>
     <color name="indigo_300">#7986cb</color>
     <color name="indigo_400">#5c6bc0</color>

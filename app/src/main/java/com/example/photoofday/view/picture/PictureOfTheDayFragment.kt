@@ -1,4 +1,5 @@
-package com.example.photoofday.view
+package com.example.PhotoOfDay.view.picture
+
 
 import android.content.Intent
 import android.net.Uri
@@ -9,8 +10,7 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
-import com.example.photoofday.PictureViewModel
-import com.example.photoofday.databinding.FragmentPictureOfTheDayBinding
+import com.example.PhotoOfDay.databinding.FragmentPictureOfTheDayBinding
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 
 class PictureOfTheDayFragment : Fragment() {
@@ -20,7 +20,8 @@ class PictureOfTheDayFragment : Fragment() {
     private lateinit var pictureViewModel: PictureViewModel
 
 
-
+    //Определим переменную типа BottomSheetBehaviour. В качестве generic передаём тип контейнера
+    //нашего BottomSheet. Этот instance будет управлять нашей нижней панелью.
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<FrameLayout>
 
     override fun onCreateView(
@@ -65,17 +66,17 @@ class PictureOfTheDayFragment : Fragment() {
                 )
             }
 
-
+            //вводим слово в inputLayout и посылаем запрос в википедию, нажав на иконку W
             inputLayout.setEndIconOnClickListener {
                 startActivity(Intent(Intent.ACTION_VIEW).apply {
                     data =
-                        Uri.parse(WIKIPEDIA+"${inputEditText.text.toString()}")
+                        Uri.parse(WIKIPEDIA + "${inputEditText.text.toString()}")
                 })
             }
 
-
+            //Здесь мы передаем наш bottomSheetFrameLayout
             bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetFrameLayout)
-
+            // Сразу укажем его состояние (свёрнутое, но не скрытое):
             bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
 
             bottomSheetFrameLayout.setOnClickListener {

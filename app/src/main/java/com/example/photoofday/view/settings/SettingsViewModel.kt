@@ -1,10 +1,9 @@
-package com.example.photoofday.view
+package com.example.PhotoOfDay.view.settings
 
-import android.content.res.Resources
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.photoofday.R
+
 
 class SettingsViewModel : ViewModel() {
 

@@ -1,14 +1,15 @@
-package com.example.photoofday.view
-
+package com.example.PhotoOfDay.view.settings
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.photoofday.R
-import com.example.photoofday.databinding.FragmentSettingsBinding
-import com.example.photoofday.view.MainActivity
+import com.example.PhotoOfDay.R
+import com.example.PhotoOfDay.databinding.FragmentSettingsBinding
+import com.example.PhotoOfDay.view.MainActivity
+
+
 import com.google.android.material.radiobutton.MaterialRadioButton
 
 open class SettingsFragment : Fragment() {
@@ -20,7 +21,7 @@ open class SettingsFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View? {
         settingsViewModel = ViewModelProvider(this).get(SettingsViewModel::class.java)
         _binding = FragmentSettingsBinding.inflate(inflater, container, false)
@@ -30,9 +31,9 @@ open class SettingsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        radioButtonSetOnClickListener(binding.indigoThemeRadioButton,R.style.IndigoTheme)
-        radioButtonSetOnClickListener(binding.pinkThemeRadioButton,R.style.PinkTheme)
-        radioButtonSetOnClickListener(binding.purpleThemeRadioButton,R.style.PurpleTheme)
+        radioButtonSetOnClickListener(binding.indigoThemeRadioButton, R.style.IndigoTheme)
+        radioButtonSetOnClickListener(binding.pinkThemeRadioButton, R.style.PinkTheme)
+        radioButtonSetOnClickListener(binding.purpleThemeRadioButton, R.style.PurpleTheme)
     }
 
     private fun radioButtonSetOnClickListener(button: MaterialRadioButton, theme: Int) {

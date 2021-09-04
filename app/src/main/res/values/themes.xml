@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="PhotoOfDay" parent="Theme.MaterialComponents.Light">
+    <style name="Theme.PhotoOfDay." parent="Theme.MaterialComponents.Light">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="IndigoTheme" parent="Theme.PhotoOfDay">
+    <style name="IndigoTheme" parent="Theme.PhotoOfDay.">
         <item name="colorPrimary">@color/indigo_500</item>
         <item name="colorPrimaryVariant">@color/indigo_700</item>
         <item name="colorAccent">@color/indigo_200</item>
@@ -25,7 +25,7 @@
         <item name="themeColorPrimary">@color/indigo_300</item>
     </style>
 
-    <style name="PinkTheme" parent="Theme.PhotoOfDay">
+    <style name="PinkTheme" parent="Theme.PhotoOfDay.">
         <item name="colorPrimary">@color/pink_500</item>
         <item name="colorPrimaryVariant">@color/pink_700</item>
         <item name="colorPrimaryDark">@color/pink_500</item>
@@ -35,10 +35,9 @@
         <item name="textColorConnected">@color/green_400</item>
         <item name="textColorDisConnected">@color/gray_200</item>
         <item name="themeColorPrimary">@color/pink_300</item>
-
     </style>
 
-    <style name="PurpleTheme" parent="Theme.PhotoOfDay">
+    <style name="PurpleTheme" parent="Theme.PhotoOfDay.">
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_500</item>
         <item name="colorOnPrimary">@color/white</item>

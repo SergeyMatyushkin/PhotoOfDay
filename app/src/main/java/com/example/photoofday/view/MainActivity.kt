@@ -1,28 +1,26 @@
-package com.example.photoofday.view
-
-import android.content.Context
-import android.content.SharedPreferences
+package com.example.PhotoOfDay.view
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 
-import com.example.photoofday.R
-import com.example.photoofday.databinding.MainActivitiBinding
+import com.example.PhotoOfDay.R
+import com.example.PhotoOfDay.databinding.MainActivityBinding
+
+
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: MainActivitiBinding
+    private lateinit var binding: MainActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setTheme(ThemeHolder.theme)
 
-        binding = MainActivitiBinding.inflate(layoutInflater)
+        binding = MainActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val navView: BottomNavigationView = binding.navView
@@ -39,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        outState.putInt(KEY_CURRENT_THEME,ThemeHolder.theme)
+        outState.putInt(KEY_CURRENT_THEME, ThemeHolder.theme)
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
@@ -51,7 +49,7 @@ class MainActivity : AppCompatActivity() {
         const val KEY_CURRENT_THEME = "current_theme"
     }
 
-    object ThemeHolder{
+    object ThemeHolder {
         var theme = R.style.PurpleTheme
     }
 }

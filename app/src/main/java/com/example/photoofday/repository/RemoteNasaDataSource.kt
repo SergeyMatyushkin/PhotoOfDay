@@ -1,5 +1,4 @@
-package com.example.photoofday.repository
-
+package com.example.PhotoOfDay.repository
 import android.util.Log
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -25,7 +24,8 @@ object RemoteNasaDataSource {
 
     fun getTodayDayString(offset: Int = 0): String {
         val currentData = Calendar.getInstance().apply { add(Calendar.DATE, offset) }.time
-        val currentDataString = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(currentData)
+        val currentDataString =
+            SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(currentData)
         Log.d(TAG, "getToday() called: offset = $offset today = $currentDataString")
 
         return currentDataString

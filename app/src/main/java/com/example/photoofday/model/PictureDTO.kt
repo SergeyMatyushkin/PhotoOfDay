@@ -1,4 +1,4 @@
-package com.example.photoofday.model
+package com.example.PhotoOfDay.model
 
 import com.google.gson.annotations.SerializedName
 
@@ -7,9 +7,9 @@ data class PictureDto(
     //авторское право
     @field:SerializedName("copyright")
     val copyright: String?,
-    //Дата изображения
+    //Дата изображения Астрономической картинки дня для извлечения
     val date: String,
-    //объяснение (описание)
+    //объяснение (описание галактики) будет загружаться в bottomSheet
     val explanation: String,
     //ссылка на картинку
     val hdurl: String,
