@@ -2,13 +2,14 @@ package com.example.photoofday.model
 
 import com.google.gson.annotations.SerializedName
 
-data class PictureDTO(
+//Data transfer object - объект передачи данных
+data class PictureDto(
     //авторское право
     @field:SerializedName("copyright")
     val copyright: String?,
-    //Дата изображения картинки дня
+    //Дата изображения
     val date: String,
-    //описание будет загружаться в bottomSheet
+    //объяснение (описание)
     val explanation: String,
     //ссылка на картинку
     val hdurl: String,

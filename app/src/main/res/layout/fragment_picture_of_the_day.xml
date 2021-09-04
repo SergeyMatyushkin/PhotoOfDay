@@ -14,40 +14,13 @@
         android:paddingEnd="@dimen/margin_small">
 
         <com.google.android.material.chip.ChipGroup
-            android:id="@+id/theme_chip_group"
-            style="@style/ChipStyle"
-            app:checkedChip="@id/indigo_theme_chip"
-            app:layout_constraintBottom_toTopOf="@+id/chip_group"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints">
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/indigo_theme_chip"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/indigo_theme" />
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/pink_theme_chip"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pink_theme" />
-
-        </com.google.android.material.chip.ChipGroup>
-
-
-        <com.google.android.material.chip.ChipGroup
             android:id="@+id/chip_group"
             style="@style/ChipStyle"
             app:checkedChip="@id/today_chip"
             app:layout_constraintBottom_toTopOf="@+id/input_layout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/theme_chip_group"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints">
 
             <com.google.android.material.chip.Chip
@@ -57,12 +30,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/before_yesterday" />
 
-    <com.google.android.material.chip.Chip
-        android:id="@+id/yesterday_chip"
-        style="@style/Widget.MaterialComponents.Chip.Choice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/yesterday" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/yesterday_chip"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yesterday" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/today_chip"
@@ -70,6 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/today" />
+
         </com.google.android.material.chip.ChipGroup>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -90,11 +64,11 @@
             app:layout_constraintTop_toBottomOf="@+id/chip_group"
             tools:ignore="NotSibling">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/input_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/image_view" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/image_view" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -120,22 +94,11 @@
         app:behavior_peekHeight="@dimen/margin_average"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
-
-
         <TextView
             android:id="@+id/bottom_sheet_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_small" />
     </FrameLayout>
-
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottom_app_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:backgroundTint="?attr/themeColorPrimary"
-        app:fabAlignmentMode="center"
-        app:navigationIcon="@drawable/ic_hamburger_menu_bottom_bar" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
