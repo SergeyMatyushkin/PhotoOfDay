@@ -5,6 +5,10 @@
     <string name="yesterday">Вчера</string>
     <string name="before_yesterday">Позавчера</string>
     <string name="photo_of_the_day_stub">Фото дня</string>
-    <string name="search_wiki">Поиск</string>
+    <string name="search_wiki">Поиск в википедии</string>
     <string name="wiki_helper_text">Максимально допустимое количество букв</string>
+    <string name="indigo_theme">Indigo</string>
+    <string name="pink_theme">Pink</string>
+    <string name="favourite">Избранное</string>
+    <string name="settings">Настройки</string>
 </resources>

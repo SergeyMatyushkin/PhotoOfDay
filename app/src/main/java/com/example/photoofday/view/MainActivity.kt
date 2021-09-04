@@ -6,6 +6,8 @@ import com.example.photoofday.R
 import com.example.photoofday.databinding.MainActivitiBinding
 
 
+
+
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: MainActivitiBinding
 

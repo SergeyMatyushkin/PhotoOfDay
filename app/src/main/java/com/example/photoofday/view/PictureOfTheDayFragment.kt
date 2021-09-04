@@ -3,9 +3,7 @@ package com.example.photoofday.view
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+
 import android.widget.FrameLayout
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
@@ -16,6 +14,8 @@ import com.example.photoofday.databinding.FragmentPictureOfTheDayBinding
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import android.widget.Toast
 import com.google.android.material.chip.Chip
+import android.view.*
+import com.example.photoofday.R
 
 class PictureOfTheDayFragment : Fragment() {
     private var _binding: FragmentPictureOfTheDayBinding? = null
@@ -34,15 +34,39 @@ class PictureOfTheDayFragment : Fragment() {
         return binding.root
     }
 
+    //методы для установки BottomAppBar
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.menu_bottom_bar, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.app_bar_fav -> Toast.makeText(context, "Favourite",
+                Toast.LENGTH_SHORT).show()
+            R.id.app_bar_settings -> Toast.makeText(context, "Settings",
+                Toast.LENGTH_SHORT).show()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+    private fun setBottomAppBar(view: View) {
+        val context = activity as MainActivity
+        context.setSupportActionBar(binding.bottomAppBar)
+        setHasOptionsMenu(true)
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        //устанавливаем иконки для  BottomAppBar
+        setBottomAppBar(view)
 
         viewModel.requestPicture()
 
         binding.apply {
             viewModel.PictureDTO.observe(viewLifecycleOwner)
             { picture ->
-                textViewBottomSheet.text = picture.explanation
+                bottomSheetTextView.text = picture.explanation
 
                 if (picture.isImage) {
                     Glide.with(root)
