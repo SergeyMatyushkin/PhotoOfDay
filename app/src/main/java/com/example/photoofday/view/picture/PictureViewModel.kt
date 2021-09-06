@@ -1,4 +1,5 @@
 package com.example.PhotoOfDay.view.picture
+
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

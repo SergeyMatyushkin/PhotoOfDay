@@ -20,8 +20,7 @@ class PictureOfTheDayFragment : Fragment() {
     private lateinit var pictureViewModel: PictureViewModel
 
 
-    //Определим переменную типа BottomSheetBehaviour. В качестве generic передаём тип контейнера
-    //нашего BottomSheet. Этот instance будет управлять нашей нижней панелью.
+
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<FrameLayout>
 
     override fun onCreateView(
