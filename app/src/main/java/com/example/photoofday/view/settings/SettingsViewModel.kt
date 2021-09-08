@@ -7,10 +7,10 @@ import androidx.lifecycle.ViewModel
 
 class SettingsViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
+    private val _textLiveData = MutableLiveData<String>().apply {
         value = "Settings"
     }
-    val text: LiveData<String> = _text
+    val textLiveData: LiveData<String> = _textLiveData
 
 
 }

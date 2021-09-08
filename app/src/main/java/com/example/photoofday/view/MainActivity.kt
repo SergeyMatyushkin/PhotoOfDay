@@ -1,10 +1,8 @@
 package com.example.PhotoOfDay.view
 
-import android.content.Context
+
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -16,8 +14,6 @@ import com.example.PhotoOfDay.R
 import com.example.PhotoOfDay.databinding.MainActivityBinding
 import com.example.PhotoOfDay.view.viewpager.ApiActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
-
-
 
 
 class MainActivity : AppCompatActivity() {

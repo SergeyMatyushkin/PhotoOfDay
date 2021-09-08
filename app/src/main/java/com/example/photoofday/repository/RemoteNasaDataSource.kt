@@ -9,12 +9,12 @@ import java.util.*
 
 object RemoteNasaDataSource {
     private const val TAG = "@@RemoteDataSource"
-    private const val BASEURL = "https://api.nasa.gov/"
+    private const val BASE_URL = "https://api.nasa.gov/"
 
     private val retrofit: Retrofit by lazy {
         Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl(BASEURL)
+            .baseUrl(BASE_URL)
             .build()
     }
     private val service: PictureOfTheDayApi by lazy {
