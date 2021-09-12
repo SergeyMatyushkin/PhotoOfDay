@@ -20,6 +20,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.viewpager.ApiActivity" />
+        <activity android:name=".view.transitions.AnimationsActivity" />
+        <activity android:name=".view.transitions.TransitionActivity" />
+        <activity android:name=".view.transitions.ExplodeActivity" />
+        <activity android:name=".view.transitions.TransformActivity" />
+        <activity android:name=".view.transitions.PathMotionActivity" />
     </application>
 
 </manifest>

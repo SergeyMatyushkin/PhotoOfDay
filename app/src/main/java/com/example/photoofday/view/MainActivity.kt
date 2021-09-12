@@ -12,6 +12,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.PhotoOfDay.R
 import com.example.PhotoOfDay.databinding.MainActivityBinding
+import com.example.PhotoOfDay.view.transitions.AnimationsActivity
 import com.example.PhotoOfDay.view.viewpager.ApiActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -51,6 +52,12 @@ class MainActivity : AppCompatActivity() {
             R.id.planets -> {
                 val planets = Intent(this, ApiActivity::class.java)
                 startActivity(planets)
+
+                true
+            }
+            R.id.animations -> {
+                val animations = Intent(this, AnimationsActivity::class.java)
+                startActivity(animations)
 
                 true
             }
