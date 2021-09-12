@@ -33,5 +33,6 @@
     <string name="transitions">Transitions</string>
 
     <string name="animations_fab">Animations FAB</string>
+    <string name="animations_bonus">Animations Bonus</string>
 
 </resources>
