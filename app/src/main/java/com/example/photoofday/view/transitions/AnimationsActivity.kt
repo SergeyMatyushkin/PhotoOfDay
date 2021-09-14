@@ -1,0 +1,52 @@
+package com.example.PhotoOfDay.view.transitions
+
+import android.content.Intent
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.PhotoOfDay.databinding.ActivityAnimationsBinding
+
+
+class AnimationsActivity: AppCompatActivity() {
+
+    private lateinit var binding: ActivityAnimationsBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        //setContentView(R.layout.activity_api)
+
+        binding = ActivityAnimationsBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.explodeButton.setOnClickListener {
+            val explode = Intent(this, ExplodeActivity::class.java)
+            startActivity(explode)
+        }
+        binding.transitionsButton.setOnClickListener {
+            val transition = Intent(this, TransitionActivity::class.java)
+            startActivity(transition)
+        }
+        binding.transformButton.setOnClickListener {
+            val transform = Intent(this, TransformActivity::class.java)
+            startActivity(transform)
+        }
+        binding.pathmotion.setOnClickListener {
+            val pathMotion = Intent(this, PathMotionActivity::class.java)
+            startActivity(pathMotion)
+        }
+
+        binding.animationsFabButton.setOnClickListener {
+            val animationsFab = Intent(this, AnimationsFabActivity::class.java)
+            startActivity(animationsFab)
+        }
+
+        binding.animationsBonusButton.setOnClickListener {
+            val animationsBonus = Intent(this, AnimationsActivityBonus::class.java)
+            startActivity(animationsBonus)
+        }
+
+    }
+
+
+
+
+}
