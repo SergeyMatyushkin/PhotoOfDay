@@ -26,4 +26,7 @@
     <color name="colorAccent">#078F15</color>
     <color name="colorAccent40Alfa">#24C308</color>
     <color name="colorPrimaryDark">#03FD08</color>
+
+    <color name="color_view_line">#000</color>
+
 </resources>
