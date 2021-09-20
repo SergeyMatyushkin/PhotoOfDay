@@ -11,6 +11,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.example.PhotoOfDay.databinding.FragmentPictureOfTheDayStartBinding
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 
