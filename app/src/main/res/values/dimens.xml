@@ -14,5 +14,6 @@
 
     <dimen name="text_size_small_XX">15sp</dimen>
     <dimen name="text_size_item_title">35sp</dimen>
+    <dimen name="text_size_small_XXX">10sp</dimen>
 
 </resources>
