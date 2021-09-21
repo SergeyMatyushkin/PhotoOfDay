@@ -1,6 +1,6 @@
 package com.example.PhotoOfDay.view.settings
 
-import android.content.res.Resources
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +10,9 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.PhotoOfDay.R
 import com.example.PhotoOfDay.databinding.FragmentSettingsBinding
 import com.example.PhotoOfDay.view.MainActivity
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.style.ForegroundColorSpan
 
 
 import com.google.android.material.radiobutton.MaterialRadioButton
@@ -27,6 +30,25 @@ open class SettingsFragment : Fragment() {
     ): View? {
         settingsViewModel = ViewModelProvider(this).get(SettingsViewModel::class.java)
         _binding = FragmentSettingsBinding.inflate(inflater, container, false)
+
+        val spannable = SpannableString("Выберите тему приложения")
+        spannable.setSpan(
+            ForegroundColorSpan(Color.BLUE),
+            0, 8,
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
+        spannable.setSpan(
+            ForegroundColorSpan(Color.RED),
+            9, 13,
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
+        spannable.setSpan(
+            ForegroundColorSpan(Color.MAGENTA),
+            14, 24,
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
+        binding.textSettings.text = spannable
+
         return binding.root
     }
 
