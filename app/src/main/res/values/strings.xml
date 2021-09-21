@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">PhotoOfDay</string>
-</resources>
+    <string name="picture">picture</string>
+    <string name="today">Сегодня</string>
+    <string name="yesterday">Вчера</string>
+    <string name="before_yesterday">Позавчера</string>
+    <string name="photo_of_the_day_stub">Фото сегодняшнего дня</string>
+    <string name="search_wiki">Найти в википедии</string>
+    <string name="wiki_helper_text">Поиск в википедии</string>
+    <string name="indigo_theme">Indigo</string>
+    <string name="pink_theme">Pink</string>
+    <string name="purple_theme">Purple</string>
+    <string name="favourite">Избранное</string>
+    <string name="settings">Настройки</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Settings</string>
+    <string name="selection_theme">Выберите тему приложения:</string>
+    <string name="indigo">Indigo</string>
+    <string name="pink">Pink</string>
+    <string name="purple">Purple</string>
+    <string name="background">фон</string>
+    <string name="planets">Планеты</string>
+    <string name="mars">Mars</string>
+    <string name="weather">Weather</string>
+
+    <string name="transition">Transition</string>
+    <string name="transform">Transform</string>
+    <string name="trajectory">Trajectory</string>
+    <string name="animations">Animations</string>
+    <string name="slide">Slide</string>
+    <string name="explode">Explode</string>
+    <string name="pathmotion">PathMotion</string>
+    <string name="transitions">Transitions</string>
+
+    <string name="animations_fab">Animations FAB</string>
+    <string name="animations_bonus">Animations Bonus</string>
+
+    <string name="recycler">RecyclerView</string>
+    <string name="notes">Заметки</string>
+    <string name="note_description">Купить молока!!</string>
+    <string name="write_a_description">Введите текст</string>
+
+    <string name="lorem_ipsum">\Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+
+
+    </resources>
